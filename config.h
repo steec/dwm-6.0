@@ -3,7 +3,7 @@
 #define NUMCOLORS         8             // need at least 3
 static const char colors[NUMCOLORS][ColLast][8] = {
    // border   foreground  background
-	{ "#2a2a2e", "#81a2be", "#282a2e" },	//normal - blue foreground
+	{ "#121212", "#81a2be", "#282a2e" },	//normal - blue foreground
 	{ "#81a2be", "#b294bb", "#282a2e" },	//highlight - Magenta 
 	{ "#a54242", "#cc6666", "#282a2e" },	//urgent - Red
 	{ "#373b41", "#afd787", "#282a2e" },	//Green

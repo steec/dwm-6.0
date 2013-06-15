@@ -14,9 +14,10 @@ X11LIB = /usr/X11R6/lib
 XINERAMALIBS = -L${X11LIB} -lXinerama
 XINERAMAFLAGS = -DXINERAMA
 
+XFT = /usr/include/freetype2
 # includes and libs
-INCS = -I. -I/usr/include -I${X11INC}
-LIBS = -L/usr/lib -lc -L${X11LIB} -lX11 ${XINERAMALIBS}
+INCS = -I. -I/usr/include -I${X11INC} -I${XFT}
+LIBS = -L/usr/lib -lc -L${X11LIB} -lX11 ${XINERAMALIBS} -lXft
 
 # flags
 CPPFLAGS = -DVERSION=\"${VERSION}\" ${XINERAMAFLAGS}
